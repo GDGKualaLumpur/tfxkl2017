@@ -10,16 +10,16 @@
 
 :zap: [Live demo](https://tfxkl2017.firebaseapp.com/)
 
-### Features
+## Features
 :white_check_mark: Polymer  
-:white_check_mark: Responsive
+:white_check_mark: Responsive  
 :white_check_mark: [PRPL pattern](https://www.polymer-project.org/1.0/toolbox/server)  
 :white_check_mark: Optimized and fast  
 :white_check_mark: Editable theme colors  
 
-### Setup
+## Setup
 
-###### Prerequisites
+### Prerequisites
 
 Install [polymer-cli](https://github.com/Polymer/polymer-cli):
 
@@ -31,19 +31,19 @@ and [Bower](https://bower.io/):
 
 :point_right: **[Fork](https://github.com/limhenry/samarium/fork) this repository** and clone it locally.
 
-##### Install dependencies
+#### Install dependencies
 
     bower install
 
-##### Start the development server
+#### Start the development server
 
 This command serves the app at `http://localhost:8080` and provides basic URL
 routing for the app:
 
     polymer serve
     
-##### Configure
-###### SEO
+### Configure
+#### SEO
 The project doesn't use any generators, so there is a need to edit manually
 meta data in `index.html`
 ```
@@ -54,12 +54,12 @@ meta data in `index.html`
   <meta name="author" content="Henry Lim, GDG Kuala Lumpur">
   ...
 ```
-###### Google Analytics
+#### Google Analytics
 Replace GA tracking code in `index.html`
 ```
 ga('create', 'UA-XXXXXXXX-X', 'auto');
 ```
-###### Site Content
+#### Site Content
 The most important file of configuration is data/data.json which looks like:
 ```
     "general": {...},
@@ -70,10 +70,10 @@ The most important file of configuration is data/data.json which looks like:
     "partners": [...]
 ```
 
-###### Styling
+#### Styling
 Styling of your app can be found in `src/shared-styles.html`.
  
-### Colors
+#### Colors
 Generate your own color scheme with [Material Palette](https://www.materialpalette.com/) and click download Polymer
 ![material_design_palette_generator](https://cloud.githubusercontent.com/assets/2954281/17750340/a02f8e76-64ca-11e6-80f0-53392b30f89a.png)
 
@@ -90,7 +90,7 @@ Now Replace next section
 --disabled-text-color:      #BDBDBD;
 --divider-color:            #BDBDBD;
 ```
-### Build
+## Build
 
 This command performs HTML, CSS, and JS minification on the application
 dependencies, and generates a service-worker.js file with code to pre-cache the
@@ -104,7 +104,7 @@ H2/push-compatible servers or to clients that do not support H2/Push.
 
     polymer build
 
-### Who uses the template?
+## Who uses the template?
 
 Going to use the template? Go on! The only thing we ask - let us know with a
 pull request, so we can include you in this list.
@@ -113,23 +113,23 @@ pull request, so we can include you in this list.
 |------|------|------|
 | TensorFlow Dev Summit 2017 Extended Kuala Lumpur | [https://tfxkl2017.firebaseapp.com/](https://tfxkl2017.firebaseapp.com/)|GDG Kuala Lumpur|
 
-### Roadmap :rocket:
-:x: Offline access
-:x: Service worker
-:x: Animation
-:x: Push notification  
-:x: Polymer 2.0/ES2015
-:x: Accessibility  
-:x: Unit/Integration Tests  
+## Roadmap :rocket:
+:x: Offline access  
+:x: Service worker  
+:x: Animation  
+:x: Push notification    
+:x: Polymer 2.0/ES2015  
+:x: Accessibility    
+:x: Unit/Integration Tests    
 :point_right: __Propose your feature with [creating an issue](https://github.com/limhenry/samarium/issues/new)__
 
-### Contributing
+## Contributing
 
 Project Samarium is still under development, and it is open for contributions.
 Feel free to send PR. If you have any questions, feel free to contact
 [Henry Lim](https://twitter.com/henrylim96).
 
-##### General workflow
+## General workflow
 1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Make your changes
@@ -138,7 +138,7 @@ Feel free to send PR. If you have any questions, feel free to contact
 6. Push to the branch (`git push origin my-new-feature`)
 7. Create new Pull Request
 
-### License
+## License
 
 Project is published under the [MIT license](https://github.com/limhenry/samarium/blob/master/LICENSE.md).  
 Feel free to clone and modify repo as you want, but don't forget to add reference to authors :)
