@@ -18,29 +18,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         display: block;
         width: 100%;
       }
-
-      .content{
-        margin: 12px 32px;
-        max-width: 860px;
+      .container .item{
+        border-top-width: 1px;
+        border-top-style: solid;
+        border-top-color: var(--divider-color);
       }
-      .content h2{
-        margin: 36px 0 24px 16px;
-        color: var(--secondary-text-color);
-        font-weight: 400;
-        font-size: 2em;
+      .container .item:first-of-type{
+        border-top: none;
       }
-
-      .content .item{
-        padding: 16px 0;
-        display: flex;
-        border-bottom-width: 1px;
-        border-bottom-style: solid;
-        border-bottom-color: var(--divider-color);
-      }
-      .content .item:last-child{
-        border-bottom: none;
-      }
-      .content .item .time{
+      .container .item .time{
         width: 180px;
         margin: 0 36px 0 12px;
         font-size: 56px;
@@ -48,96 +34,44 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         letter-spacing: -2px;
         color: var(--default-primary-color);
       }
-      .content .item .time span{
+      .container .item .time span{
         margin-left: 8px;
         font-size: 16px;
         letter-spacing: 0;
       }
-      .content .item .detail{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;        
-      }
-      .content .item .title{
+      .container .item .title{
         margin: 0 0 4px 0;
         font-size: 1.3em;
         color: var(--primary-text-color);
       }
-      .content .item .info{
-        margin-left: 2px;
+      .container .item .info{
         font-size: 14px;
         color: var(--secondary-text-color);
         font-weight: 400;
       }    
       @media screen and (max-width: 860px){
-        .content{
-          margin: 0 16px;
-        }
-        .content h2{
-          font-size: 1.8em;
-        }
-        .content .item .time{
+        .container .item .time{
           font-size: 32px;
           width: 80px;
           min-width: 80px;
         }
-        .content .item .time span{
+        .container .item .time span{
           margin-left: 6px;
         }
       }  
     </style>
 
-    <div class="content">
-      <h2>Saturday, 18 February 2017</h2>
-      <div class="item">
-        <div class="time">12:00<span>PM</span></div>
-        <div class="detail">
-          <div class="title">Registration</div>
-          <div class="info"></div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="time">1:00<span>PM</span></div>
-        <div class="detail">
-          <div class="title">Introduction (GDG)</div>
-          <div class="info">JT Liew</div>
-        </div>
-      </div>      
-      <div class="item">
-        <div class="time">1:10<span>PM</span></div>
-        <div class="detail">
-          <div class="title">Opening Keynote</div>
-          <div class="info"></div>
-        </div>
-      </div>      
-      <div class="item">
-        <div class="time">2:20<span>PM</span></div>
-        <div class="detail">
-          <div class="title">TBA</div>
-          <div class="info">TBA</div>
-        </div>
-      </div>      
-      <div class="item">
-        <div class="time">3:30<span>PM</span></div>
-        <div class="detail">
-          <div class="title">TensorFlow is hard, Keras is not</div>
-          <div class="info">Anonoz Chong</div>
-        </div>
-      </div>      
-      <div class="item">
-        <div class="time">4:20<span>PM</span></div>
-        <div class="detail">
-          <div class="title">TensorFlow Codelab</div>
-          <div class="info">Christine Tee</div>
-        </div>
-      </div>      
-      <div class="item">
-        <div class="time">5:00<span>PM</span></div>
-        <div class="detail">
-          <div class="title">Photo session and closing</div>
-          <div class="info"></div>
-        </div>
-      </div>                                                
+    <div class="container">
+      <h2>{{app.dateReadable}}</h2>
+      <template is="dom-repeat" items="[[app.agenda]]">
+        <div class="item">
+          <div class="time">{{item.startTime}}<span>{{item.AmPm}}</span></div>
+          <div class="detail">
+            <div class="title">{{item.title}}</div>
+            <div class="info">{{item.speaker}}</div>
+          </div>
+        </div>     
+      </template>       
     </div>
   </template>
 

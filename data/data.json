@@ -1,0 +1,91 @@
+{
+    "general": {
+        "datetime": "Sat 18 Feb, 2017",
+        "ticket": "https://tfxkl2017.peatix.com",
+        "ticket_soldout": false
+    },
+    "navigation": [{
+        "title": "Home",
+        "permalink": "home"
+    },{
+        "title": "Agenda",
+        "permalink": "agenda"
+    },{
+        "title": "Community Guidelines",
+        "permalink": "communityguidelines"
+    }],
+    "location": {
+        "address": "iTrain (M) Sdn Bhd, C-19-8, KL Trillion, 338 Jalan Tun Razak, 50400 Kuala Lumpur",
+        "mapCenter": {
+            "latitude": 3.163721,
+            "longitude": 101.71796110000002,
+            "zoom": 16
+        },
+        "pointer": {
+            "latitude": 3.163721,
+            "longitude": 101.71796110000002
+        }
+    },
+    "agenda": {
+        "dateReadable": "Saturday, 18 February 2017",
+        "agenda": [{
+            "startTime": "12:00",
+            "AmPm": "PM",
+            "title": "Registration",
+            "speaker": ""
+        },{
+            "startTime": "1:00",
+            "AmPm": "PM",
+            "title": "Introduction (GDG)",
+            "speaker": "JT Liew"
+        },{
+            "startTime": "1:10",
+            "AmPm": "PM",
+            "title": "Opening Keynote",
+            "speaker": ""
+        },{
+            "startTime": "2:20",
+            "AmPm": "PM",
+            "title": "TBA",
+            "speaker": "TBA"
+        },{
+            "startTime": "3:30",
+            "AmPm": "PM",
+            "title": "TensorFlow is hard, Keras is not",
+            "speaker": "Anonoz Chong"
+        },{
+            "startTime": "4:20",
+            "AmPm": "PM",
+            "title": "TensorFlow Codelab",
+            "speaker": "Christine Tee"
+        },{
+            "startTime": "5:00",
+            "AmPm": "PM",
+            "title": "Photo session and closing",
+            "speaker": ""
+        }]
+    },
+    "speakers": [],
+    "partners": [{
+        "title": "Organized by",
+        "partner": [{
+            "name": "GDG Kuala Lumpur",
+            "url": "https://www.facebook.com/GDGKualaLumpur/",
+            "logoUrl": "../images/partner/gdgkl.png",
+            "logoWidth": 380
+        }]
+    },{
+        "title": "Made possible with",
+        "partner": [{
+            "name": "Google",
+            "url": "https://www.google.com",
+            "logoUrl": "../images/partner/google.png",
+            "logoWidth": 150
+        },{
+            "name": "iTrain",
+            "url": "https://www.facebook.com/itrain.malaysia/",
+            "logoUrl": "../images/partner/itrain.jpg",
+            "logoWidth": 120
+        }]        
+    }]
+}
