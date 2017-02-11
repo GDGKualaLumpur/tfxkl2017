@@ -73,7 +73,7 @@ The most important file of configuration is data/data.json which looks like:
 #### Styling
 Styling of your app can be found in `src/shared-styles.html`.
  
-#### Colors
+##### Colors
 Generate your own color scheme with [Material Palette](https://www.materialpalette.com/) and click download Polymer
 ![material_design_palette_generator](https://cloud.githubusercontent.com/assets/2954281/17750340/a02f8e76-64ca-11e6-80f0-53392b30f89a.png)
 
