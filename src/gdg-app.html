@@ -222,6 +222,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <template is="dom-if" if="{{!app.general.ticket_soldout}}">
               <a rel="noopener" target="_blank" class="paper-button-link" href="{{app.general.ticket}}" tabindex="-1"><paper-button>Get Ticket</paper-button></a>
             </template>
+              <template is="dom-if" if="{{app.general.ticket_soldout}}">
+                <paper-button style="background: #D32F2F; color: #fff" disabled>Sold Out</paper-button>
+              </template>               
           </div>      
         </app-header>
 

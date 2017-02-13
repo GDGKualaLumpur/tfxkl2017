@@ -2,7 +2,7 @@
     "general": {
         "datetime": "Sat 18 Feb, 2017",
         "ticket": "https://tfxkl2017.peatix.com",
-        "ticket_soldout": false
+        "ticket_soldout": true
     },
     "navigation": [{
         "title": "Home",
