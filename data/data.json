@@ -71,7 +71,7 @@
         "partner": [{
             "name": "GDG Kuala Lumpur",
             "url": "https://www.facebook.com/GDGKualaLumpur/",
-            "logoUrl": "../images/partner/gdgkl.png",
+            "logoUrl": "images/partner/gdgkl.png",
             "logoWidth": 380
         }]
     },{
@@ -79,12 +79,12 @@
         "partner": [{
             "name": "Google",
             "url": "https://www.google.com",
-            "logoUrl": "../images/partner/google.png",
+            "logoUrl": "images/partner/google.png",
             "logoWidth": 150
         },{
             "name": "iTrain",
             "url": "https://www.facebook.com/itrain.malaysia/",
-            "logoUrl": "../images/partner/itrain.jpg",
+            "logoUrl": "images/partner/itrain.jpg",
             "logoWidth": 120
         }]        
     }]

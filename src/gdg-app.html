@@ -198,7 +198,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <app-location route="{{route}}"></app-location>
     <app-route
         route="{{route}}"
-        pattern="/:page"
+        pattern="[[rootPath]]:page"
         data="{{routeData}}"
         tail="{{subroute}}"></app-route>
 
@@ -215,7 +215,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <paper-tabs noink="false" sticky selected="[[page]]" attr-for-selected="name" > 
               <template is="dom-repeat" items="[[app.navigation]]">
                 <paper-tab link name="{{item.permalink}}">
-                  <a href="/{{item.permalink}}" class="link" tabindex="-1">{{item.title}}</a>
+                  <a href="[[rootPath]]{{item.permalink}}" class="link" tabindex="-1">{{item.title}}</a>
                 </paper-tab>                                 
               </template>
             </paper-tabs>        

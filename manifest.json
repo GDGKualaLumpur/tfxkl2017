@@ -1,7 +1,7 @@
 {
   "name": "TensorFlow Dev Summit 2017 Extended Kuala Lumpur",
   "short_name": "TensorFlow Dev Summit 17 Extended KL",
-  "start_url": "/?homescreen=1",
+  "start_url": "/tfxkl17/",
   "display": "standalone",
   "theme_color": "#ee6534",
   "background_color": "#ee6534",

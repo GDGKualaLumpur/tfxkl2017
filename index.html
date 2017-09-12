@@ -14,14 +14,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <meta charset="utf-8">
     <meta name="generator" content="Polymer Starter Kit">
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
-    <link rel="icon" href="/images/favicon.png">
+    <link rel="icon" href="images/favicon.png">
     <meta name="theme-color" content="#ee6534">
 
     <title>TensorFlow Dev Summit 2017 Extended Kuala Lumpur</title>
     <meta name="description" content="TensorFlow Dev Summit 2017 will be EXTENDED to our beloved city Kuala Lumpur! Let's have a day to learn about TensorFlow with industry experts via talks and codelabs!">
     <meta name="author" content="Henry Lim, GDG Kuala Lumpur">
-    <link rel="canonical" href="https://tfxkl2017.firebaseapp.com/">
-    <link rel="manifest" href="/manifest.json">
+    <link rel="canonical" href="https://events.gdgkl.org/tfxkl17/">
+    <base href="/tfxkl17/">
+    <link rel="manifest" href="manifest.json">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="TensorFlow Dev Summit 2017 Extended Kuala Lumpur">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -31,9 +32,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <meta name="twitter:site" content="@GDGKL">
     <meta name="twitter:title" content="TensorFlow Dev Summit 2017 Extended Kuala Lumpur">
     <meta name="twitter:description" content="TensorFlow Dev Summit 2017 will be EXTENDED to our beloved city Kuala Lumpur! Let's have a day to learn about TensorFlow with industry experts via talks and codelabs!">
-    <meta name="twitter:image:src" content="https://tfxkl2017.firebaseapp.com/images/social/social.jpg">
+    <meta name="twitter:image:src" content="https://events.gdgkl.org/tfxkl17/images/social/social.jpg">
     <meta property="og:title" content="TensorFlow Dev Summit 2017 Extended Kuala Lumpur">
-    <meta property="og:image" content="https://tfxkl2017.firebaseapp.com/images/social/social.jpg">
+    <meta property="og:image" content="https://events.gdgkl.org/tfxkl17/images/social/social.jpg">
     <meta property="og:description" content="TensorFlow Dev Summit 2017 will be EXTENDED to our beloved city Kuala Lumpur! Let's have a day to learn about TensorFlow with industry experts via talks and codelabs!">
 
     <script>
@@ -41,6 +42,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       window.Polymer = {
         dom: 'shadow',
         lazyRegister: true,
+        rootPath: '/tfxkl17/'
       };
 
       // Load webcomponentsjs polyfill if browser does not support native
@@ -67,7 +69,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         if (!webComponentsSupported) {
           var script = document.createElement('script');
           script.async = true;
-          script.src = '/bower_components/webcomponentsjs/webcomponents-lite.min.js';
+          script.src = 'bower_components/webcomponentsjs/webcomponents-lite.min.js';
           script.onload = onload;
           document.head.appendChild(script);
         } else {
@@ -84,7 +86,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       ga('send', 'pageview');
     </script>
 
-    <link rel="import" href="/src/gdg-app.html">
+    <link rel="import" href="src/gdg-app.html">
 
     <style>
       body {

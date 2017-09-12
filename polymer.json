@@ -6,14 +6,25 @@
     "src/gdg-agenda.html",
     "src/gdg-communityguidelines.html"
   ],
-  "sourceGlobs": [
+  "sources": [
     "src/**/*",
     "images/**/*",
     "data/**/*",
     "bower.json"
   ],
-  "includeDependencies": [
+  "extraDependencies": [
     "manifest.json",
     "bower_components/webcomponentsjs/webcomponents-lite.min.js"
-  ]
+  ],
+  "builds": [{
+    "name": "tfxkl17",
+    "bundle": false,
+    "js": {"minify": true, "compile": true},
+    "css": {"minify": true},
+    "html": {"minify": true},
+    "addPushManifest": true,
+    "insertPrefetchLinks": true,
+    "addServiceWorker": false,
+    "basePath": true
+  }]
 }

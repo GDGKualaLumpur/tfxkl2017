@@ -157,7 +157,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <p><iron-icon icon="gdg-icons:location-on"></iron-icon>{{app.location.address}}</p>
       </div>
       <div class="container">
-        <google-map zoom="{{app.location.mapCenter.zoom}}" disable-zoom latitude="{{app.location.mapCenter.latitude}}" longitude="{{app.location.mapCenter.longitude}}" fit-to-markers>
+        <google-map zoom="{{app.location.mapCenter.zoom}}" disable-zoom latitude="{{app.location.mapCenter.latitude}}" longitude="{{app.location.mapCenter.longitude}}" fit-to-markers api-key="AIzaSyBuONQPZf7JhlKmr48uzFgjR_-zV9BXdKM">
           <google-map-marker latitude="{{app.location.pointer.latitude}}" longitude="{{app.location.pointer.longitude}}"></google-map-marker>
         </google-map>
       </div>
@@ -168,7 +168,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <h2>{{item.title}}</h2>
         <div class="logo">
           <template is="dom-repeat" items="{{item.partner}}">
-            <a rel="noopener" target="_blank" href="{{item.url}}"><img src="{{item.logoUrl}}" style$="width: {{item.logoWidth}}px"></a>
+            <a rel="noopener" target="_blank" href="{{item.url}}"><img src="[[rootPath]]{{item.logoUrl}}" style$="width: {{item.logoWidth}}px"></a>
           </template>
         </div>
       </template>
